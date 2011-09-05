@@ -96,11 +96,11 @@ Eggnog.Render.prototype = (function(){
     
     proto._appendElement = function(b_node, element){
         if(element.type === 'title'){
-            b_node.append($('<h1></h1>').addClass('en_Title').text(this._escVal(element.value)).css(element.style));
+            b_node.append($('<h1></h1>').addClass('en_Title').text(element.value).css(element.style));
         }else if(element.type === 'text'){
-            b_node.append($('<p></p>').addClass('en_Text').text(this._escVal(element.value)).css(element.style));
+            b_node.append($('<p></p>').addClass('en_Text').text(element.value).css(element.style));
         }else if(element.type === 'link'){
-            b_node.append($('<p></p>').addClass('en_Link').css(element.style).append($('<a></a>').attr('href',element.href).text(this._escVal(element.value))));
+            b_node.append($('<p></p>').addClass('en_Link').css(element.style).append($('<a></a>').attr('href',element.href).text(element.value)));
         }else if(element.type === 'image'){
             b_node.append($('<img>').addClass('en_Image').css(element.style).attr('src', element.src));
         }else if(element.type === 'tag'){
@@ -122,9 +122,6 @@ Eggnog.Render.prototype = (function(){
         this.current = s_node;
     };
     
-    proto._escVal = function(q){
-        return q;
-    };
-    
     return proto;
 })();
+

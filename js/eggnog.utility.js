@@ -67,3 +67,4 @@ Eggnog.Utility.prototype = (function($){
     
     return proto;
 })(jQuery);
+

@@ -40,7 +40,6 @@ Eggnog.init.prototype = (function(){
         return this.slide.note;
     };
     
-    
-    
     return proto;
 })();
+
