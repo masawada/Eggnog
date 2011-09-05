@@ -1,0 +1,19 @@
+*{
+margin:0;
+padding:0;
+}
+
+.en_Slide{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+background:#FFFFFF;
+}
+
+.en_Title, .en_Text, .en_Link, .en_Image, .en_Tag{
+display:block;
+position:absolute;
+}
