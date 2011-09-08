@@ -56,32 +56,32 @@ Eggnog - a presentation software on JavaScript
 例:  
   
 var slide = {  
-    title: 'タイトル',  
-    aspect: 4/3, //　縦横のアスペクト比   
-    pages: [{ // 各スライドのまとまり  
-        note: 'メモ',　// スライド単位の発表者ノート  
-        blocks: [{ // スライド内で順次表示させる要素のまとまり  
-            elements: [{  
-                type: 'title', // 型。詳細は「表示型」項参照  
-                value: 'Hello, world', // 要素の表示される部分  
-                style: { // 適用されるスタイル。  
-                    width: '100%',  
-                    fontSize: '100%'  
+        title: 'タイトル',  
+        aspect: 4/3, //　縦横のアスペクト比   
+        pages: [{ // 各スライドのまとまり  
+            note: 'メモ',　// スライド単位の発表者ノート  
+            blocks: [{ // スライド内で順次表示させる要素のまとまり  
+                elements: [{  
+                    type: 'title', // 型。詳細は「表示型」項参照  
+                    value: 'Hello, world', // 要素の表示される部分  
+                    style: { // 適用されるスタイル。  
+                        width: '100%',  
+                        fontSize: '100%'  
+                    }  
+                },{  
+                    // ブロック内の要素は複数作成可能  
+                }],  
+                script: function(){ // ブロック読み込み時に実行されるスクリプト  
+                    // your script here  
                 }  
-            },{  
-                // ブロック内の要素は複数作成可能  
             }],  
-            script: function(){ // ブロック読み込み時に実行されるスクリプト  
+            script: function(){ // スライド読み込み時に実行されるスクリプト  
                 // your script here  
             }  
-        }],  
-        script: function(){ // スライド読み込み時に実行されるスクリプト  
-            // your script here  
-        }  
-    },{  
-        // ページは複数作成可能  
-    }]  
-};  
+        },{  
+            // ページは複数作成可能  
+        }]  
+    };  
   
   最終的にこの形に収まれば良い。  
   テンプレート関数を作成して動的に生成することなども可能である。  
