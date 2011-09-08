@@ -46,9 +46,9 @@ Eggnog.Slide.prototype = (function(){
         block = parseInt(block);
         
         if(
-            0 < page &&
+            0 <= page &&
             page < this.slide.pages.length &&
-            0 < block &&
+            0 <= block &&
             block < this.slide.pages[page].blocks.length
         ){
             this.page = page;
