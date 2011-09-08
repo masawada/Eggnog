@@ -1,8 +1,6 @@
 Eggnog - a presentation software on JavaScript
-==============================================
 
 目次
-----
 1. 動作環境
 2. ライブラリの読み込み
 3. メソッド
@@ -13,12 +11,10 @@ Eggnog - a presentation software on JavaScript
 
 
 動作環境
---------
   JavaScriptが動作するブラウザ。
   
 
 ライブラリの読み込み・初期化
-----------------------------
   var eggnog = Eggnog.init(slide slideObject, base DOM, width number, height number);
   
   slide:
@@ -35,7 +31,6 @@ Eggnog - a presentation software on JavaScript
 
 
 メソッド
---------
   var eggnog = Eggnog.init();
   
   eggnog.next(); // 次ブロックを表示。全ブロックが表示されていたら次のページへ移動
@@ -50,7 +45,6 @@ Eggnog - a presentation software on JavaScript
 
 
 記法
-----
   JSON形式で記述する。
 
 例: 
@@ -87,7 +81,6 @@ Eggnog - a presentation software on JavaScript
 
 
 表示型
-------
   Eggnogには以下の表示型がある。
   要素により使い分けること。
   
@@ -132,7 +125,6 @@ Eggnog - a presentation software on JavaScript
 
 
 スタイルの指定
--------------
   block内でstyleを指定する場合、jQueryと同じ記法を用いる。
   
   style: {
@@ -144,7 +136,6 @@ Eggnog - a presentation software on JavaScript
 
 
 ライセンス
-----------
 The MIT License (MIT)
 
 Copyright (c) 2011 andantesoftware.com
@@ -156,7 +147,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ChangeLog
----------
 2011.09.08: OperaでsetSizeにwindow指定できないバグ修正
             READMEの一部を修正。
 2011.09.05: ファーストコミット
