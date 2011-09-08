@@ -52,10 +52,9 @@ Eggnog - a presentation software on JavaScript
 記法  
 ----  
   JSON形式で記述する。  
-  
-例:  
-  
-var slide = {  
+
+例: 
+    var slide = {  
         title: 'タイトル',  
         aspect: 4/3, //　縦横のアスペクト比   
         pages: [{ // 各スライドのまとまり  
