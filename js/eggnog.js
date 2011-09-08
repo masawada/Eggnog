@@ -271,8 +271,8 @@ Eggnog.Utility.prototype = (function($){
     
     // public
     proto.setSize = function(width, height){
-        width = (width === 'window')? this.windowWidth() : width;
-        height = (height === 'window')? this.windowHeight() : height;
+        width = (width === 'window')? $(window).width() : width;
+        height = (height === 'window')? $(window).height() : height;
         // validate input
         
         this._calcSize(Number(width), Number(height));
@@ -282,20 +282,6 @@ Eggnog.Utility.prototype = (function($){
     
     proto.setTitle = function(title){
         document.title = title || 'Untitled';
-    };
-    
-    proto.windowWidth = function(){
-        if(window.innerWidth){return window.innerWidth;} 
-        else if(document.documentElement && document.documentElement.clientWidth != 0){return document.documentElement.clientWidth;} 
-        else if(document.body){return document.body.clientWidth;} 
-        return 0;
-    };
-    
-    proto.windowHeight = function(){
-        if(window.innerHeight){return window.innerHeight;} 
-        else if(document.documentElement && document.documentElement.clientHeight != 0){return document.documentElement.clientHeight;} 
-        else if(document.body){return document.body.clientHeight;} 
-        return 0;
     };
     
     // private
